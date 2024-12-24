@@ -49,7 +49,7 @@ Make sure you have the following installed:
 3. **Run the Application**:
    Execute the Python script:
    ```bash
-   python diabetes_prediction.py
+   python main.py
    ```
 
 4. **Enter User Data**:
