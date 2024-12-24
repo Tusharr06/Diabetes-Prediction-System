@@ -5,11 +5,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
-from trove_classifiers import classifiers
+
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 
+
+#Enter the file path accordingly#
 diabetes_dataset = pd.read_csv("/home/tushar/Documents/MLPROJECT-1/diabetes.csv")
 
 print(diabetes_dataset.head())
