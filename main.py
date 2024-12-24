@@ -5,6 +5,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
+from trove_classifiers import classifiers
+
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 
@@ -22,3 +24,6 @@ scaler = StandardScaler()
 standarized_data = scaler.fit_transform(X)
 print(standarized_data)
 X = standarized_data
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=.2,stratify=Y,random_state=2)
+classifier = svm.SVC(kernel="linear")
+classifier.fit(X_train,Y_train)
