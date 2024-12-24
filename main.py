@@ -12,7 +12,7 @@ pd.set_option('display.width', None)
 
 
 #Enter the file path accordingly#
-diabetes_dataset = pd.read_csv("/home/tushar/Documents/MLPROJECT-1/diabetes.csv")
+diabetes_dataset = pd.read_csv("diabetes.csv")
 
 print(diabetes_dataset.head())
 print(diabetes_dataset.describe())
