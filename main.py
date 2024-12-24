@@ -33,3 +33,27 @@ print(training_data_accuracy)
 X_test_prediction = classifier.predict(X_test)
 test_data_accuracy=accuracy_score(X_test_prediction,Y_test)
 print(test_data_accuracy)
+
+pregnancies = float(input("Enter number of pregnancies: "))
+glucose = float(input("Enter glucose level: "))
+blood_pressure = float(input("Enter blood pressure: "))
+skin_thickness = float(input("Enter skin thickness: "))
+insulin = float(input("Enter insulin level: "))
+bmi = float(input("Enter BMI: "))
+dpf = float(input("Enter Diabetes Pedigree Function: "))
+age = float(input("Enter age: "))
+
+predict_data = (pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, dpf, age)
+
+predict_data_np = np.asarray(predict_data).reshape(1, -1)
+
+standarized_data_predict_data = scaler.transform(predict_data_np)
+
+prediction = classifier.predict(standarized_data_predict_data)
+
+if prediction[0] == 0:
+    print("The Person Is Not Diabetic")
+else:
+    print("The Person Is Diabetic")
+
+
