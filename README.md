@@ -5,6 +5,7 @@
 - Features
 - Technologies Used
 - Usage
+- Example
 - File Structure
 - Screenshots
 - Contributing
@@ -68,6 +69,21 @@
 6. **Get the Prediction**:
     After entering the data, click the "Predict" button to see the prediction result.
 
+### Example
+
+Here are some example values you can use to test the form:
+
+- **Number of Pregnancies**: 3
+- **Glucose Level**: 150
+- **Blood Pressure**: 85
+- **Skin Thickness**: 30
+- **Insulin Level**: 130
+- **BMI**: 32.0
+- **Diabetes Pedigree Function**: 0.8
+- **Age**: 50
+
+After entering these values, the model will predict whether the person is diabetic or not.
+
 ## File Structure
 
 - `app.py`: The main Flask application file.
@@ -77,7 +93,8 @@
 
 ## Screenshots
 
-![Project Screenshot](screenshot1.png)
+![Project Screenshot](screenshot.mp4)
+
 
 ## Contributing
 
