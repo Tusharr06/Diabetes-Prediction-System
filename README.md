@@ -93,8 +93,8 @@ After entering these values, the model will predict whether the person is diabet
 
 ## Screenshots
 
-![Project Screenshot](screenshot1.png)
 ![Project Screenshot](screenshot2.png)
+![Project Screenshot](screenshot1.png)
 
 
 ## Contributing
